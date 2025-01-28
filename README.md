@@ -1,6 +1,6 @@
 # Cotação Diária do Dólar
 
-Este é um bot do Telegram que fornece a cotação diária do dólar em real, com os valores de fechamento do dia anterior para compras e vendas.
+Este é um bot do Telegram que fornece a cotação do dólar em real, com os valores em tempo real.
 
 ## Funcionalidades
 
@@ -34,7 +34,10 @@ Isso se deve ao fato de que você pulou uma das etapas de configuração, e não
 4. Execute o bot com `node app.js`.
 
 ## Acessar o bot funcionando
-Use o bot no telegram com: t.me/CotacaoAtualBot
+Use o bot no telegram com: t.me/cotacaoAtualBot
+
+## Repositorios
+Código fonte: https://github.com/devJunr/CotacaoAtualBot | Imagem para container: https://hub.docker.com/r/devjunr/cotacaoatualbot_telegram_bot 
 
 ## Contato
 
