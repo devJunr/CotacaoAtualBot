@@ -34,7 +34,7 @@ Isso se deve ao fato de que você pulou uma das etapas de configuração, e não
 4. Execute o bot com `node app.js`.
 
 ## Acessar o bot funcionando
-Use o bot no telegram com: t.me/cotacaoAtualBot
+Use o bot no telegram com: https://t.me/cotacaoAtualBot
 
 ## Repositorios
 Código fonte: https://github.com/devJunr/CotacaoAtualBot | Imagem para container: https://hub.docker.com/r/devjunr/cotacaoatualbot_telegram_bot 
