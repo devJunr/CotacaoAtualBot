@@ -1,4 +1,4 @@
-const TOKEN_BOT = "<YOUR TOKEN TELEGRAM BOT ";
+const TOKEN_BOT = process.env.TOKEN_BOT;
 var apiBcb = "https://economia.awesomeapi.com.br/json/all/USD-BRL";
 
 async function obterCotacao() {
