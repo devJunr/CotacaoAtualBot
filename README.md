@@ -73,6 +73,14 @@ Código fonte: https://github.com/devJunr/CotacaoAtualBot | Imagem para containe
 
 Se você precisar de ajuda ou tiver alguma dúvida, entre em contato com o administrador do bot, @adrjun , no telegram.
 
+
+## 📁 Historico de Versões
+#### v1.2.0-abeee33
+Nesta versão, implementou uma atualização de segurança, o container agora roda sem previlegios de usuário root, isso ajuda a reduzir a superficie de ataque e protege o ambiente de possiveis explorações.
+
+#### v1.1.0-ab22dc
+Na versão, otimizei o sistema de listagem de mensagens para o chat bot, melhorando o visual das mensagens no chat
+
 ## 🔨 Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
