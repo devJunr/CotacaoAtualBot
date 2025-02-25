@@ -3,7 +3,7 @@ version: '3.8'
 services:
   telegram-bot:
     container_name: 'Bot-Cotacao'
-    image: cotacaoatualbot:v1.1.0
+    image: <IMAGEM MAIS ATUAL PARA CONTAIENER>
     environment:
       TOKEN_BOT: ${TOKEN_BOT}
     restart: always
