@@ -16,11 +16,11 @@ Este é um bot do Telegram que fornece a cotação do dólar em real, com os val
 
 #### Caso na execução
 ##### Caso 1
-Caso na execução do bot, o terminal retorne o erro: 
+Caso na execução do bot, o terminal retorne o erro:
 ```bash
 error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 404 Not Found"}
 ```
-Isso se deve ao fato de que você pulou uma das etapas de configuração, e não adicionou o token do seu bot na constante ```TOKEN_BOT``` , dentro do arquivo ```.env``` 
+Isso se deve ao fato de que você pulou uma das etapas de configuração, e não adicionou o token do seu bot na constante ```TOKEN_BOT``` , dentro do arquivo ```.env```
 
 ##### Caso 2
 Caso o container esteja rodando, sem demonstrar erro, verifique os logs com o comando: ```docker logs <id do container>```, verifique a saída, caso esteja com o erro:
@@ -52,7 +52,7 @@ verifique o caso 1
 2. Adicione o token em `TOKEN_BOT` no arquivo `.ENV`
 3. Instale as dependências do projeto com `npm install`.
 4. Execute o bot com `npm start`.
-**Observação:** Toda a questão de rodar o projeto, instalar dependências, é automatizado quando se usa um container, veja o tutorial em [Configuração Automatizada](#Configuração Automatizada) 
+**Observação:** Toda a questão de rodar o projeto, instalar dependências, é automatizado quando se usa um container, veja o tutorial em [Configuração Automatizada](#Configuração Automatizada)
 
 ## ⚙️💻 Configuração Automatizada
 (Os passos a seguir é feito por meio de containers)
@@ -67,7 +67,7 @@ verifique o caso 1
 Use o bot no telegram com: https://t.me/cotacaoAtualBot
 
 ## 📁 Repositorios
-Código fonte: https://github.com/devJunr/CotacaoAtualBot | Imagem para container: https://hub.docker.com/r/devjunr/cotacaoatualbot_telegram_bot 
+Código fonte: https://github.com/devJunr/CotacaoAtualBot | Imagem para container: https://hub.docker.com/r/devjunr/cotacaoatualbot_telegram_bot
 
 ## 📁 Contato
 
@@ -76,7 +76,9 @@ Se você precisar de ajuda ou tiver alguma dúvida, entre em contato com o admin
 
 ## 📁 Historico de Versões
 #### v1.2.0-abeee33
-Nesta versão, implementou uma atualização de segurança, o container agora roda sem previlegios de usuário root, isso ajuda a reduzir a superficie de ataque e protege o ambiente de possiveis explorações.
+- Nesta versão, implementou uma atualização de segurança, o container agora roda sem previlegios de usuário root, isso ajuda a reduzir a superficie de ataque e protege o ambiente de possiveis explorações.
+- Foi adicionado uma verificação de [integridade na imagem](https://github.com/devJunr/CotacaoAtualBot/pkgs/container/cotacaoatualbot_telegram_bot/365455903?tag=sha256-579d8b49afc52a8ff65d03b4a0b37d71fdb234e4c18b14cf7a97647ecf9da647.sig),
+para verificar, use o `cosign verify --key cosign.pub devjunr/cotacaoatualbot_telegram_bot:v1.2.0-abeee33`
 
 #### v1.1.0-ab22dc
 Na versão, otimizei o sistema de listagem de mensagens para o chat bot, melhorando o visual das mensagens no chat
